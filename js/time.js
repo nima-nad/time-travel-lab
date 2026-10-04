@@ -1,0 +1,1 @@
+window.TimeLabel = (year) => year <= -1000000 ? `approximately ${((2026-year)/1e9 >= 1 ? (2026-year)/1e9 : (2026-year)/1e6).toLocaleString('en-US', {maximumFractionDigits:3})} ${(2026-year)/1e9 >= 1 ? 'billion' : 'million'} years ago` : year <= 0 ? `${(1-year).toLocaleString('en-US')} BCE` : `${year} CE`;
